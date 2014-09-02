@@ -202,6 +202,17 @@
 		CB806DAC19B5875400072C78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB806DAB19B5875400072C78 /* AppDelegate.m */; };
 		CB806DAF19B5875400072C78 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CB806DAE19B5875400072C78 /* HelloWorldScene.m */; };
 		CB806DB219B5875400072C78 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CB806DB119B5875400072C78 /* IntroScene.m */; };
+		CB806DBD19B591A400072C78 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806DBB19B591A400072C78 /* GoogleOpenSource.framework */; };
+		CB806DBE19B591A400072C78 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806DBC19B591A400072C78 /* GooglePlus.framework */; };
+		CB806DC019B591E000072C78 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806DBF19B591E000072C78 /* AddressBook.framework */; };
+		CB806DC219B591E800072C78 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806DC119B591E800072C78 /* Accounts.framework */; };
+		CB806DC419B591F200072C78 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806DC319B591F200072C78 /* Twitter.framework */; };
+		CB806DC619B5920100072C78 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806DC519B5920100072C78 /* AssetsLibrary.framework */; };
+		CB806DC819B5921800072C78 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806DC719B5921800072C78 /* CoreLocation.framework */; };
+		CB806DCE19B5926500072C78 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806DCD19B5926500072C78 /* MediaPlayer.framework */; };
+		CB806DD019B5927200072C78 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806DCF19B5927200072C78 /* CoreMotion.framework */; };
+		CB806DD219B592B400072C78 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806DD119B592B400072C78 /* Security.framework */; };
+		CB806DD419B592C100072C78 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806DD319B592C100072C78 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -613,6 +624,19 @@
 		CB806DAE19B5875400072C78 /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
 		CB806DB019B5875400072C78 /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
 		CB806DB119B5875400072C78 /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
+		CB806DBB19B591A400072C78 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = "../../../supporting-libs/ios/gplus/GoogleOpenSource.framework"; sourceTree = "<group>"; };
+		CB806DBC19B591A400072C78 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = "../../../supporting-libs/ios/gplus/GooglePlus.framework"; sourceTree = "<group>"; };
+		CB806DBF19B591E000072C78 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CB806DC119B591E800072C78 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		CB806DC319B591F200072C78 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		CB806DC519B5920100072C78 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CB806DC719B5921800072C78 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CB806DC919B5922400072C78 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CB806DCB19B5923B00072C78 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CB806DCD19B5926500072C78 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CB806DCF19B5927200072C78 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		CB806DD119B592B400072C78 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CB806DD319B592C100072C78 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -620,16 +644,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB806DD419B592C100072C78 /* SystemConfiguration.framework in Frameworks */,
+				CB806DD219B592B400072C78 /* Security.framework in Frameworks */,
+				CB806B4119B5875100072C78 /* CoreText.framework in Frameworks */,
+				CB806B3F19B5875100072C78 /* CoreGraphics.framework in Frameworks */,
+				CB806DD019B5927200072C78 /* CoreMotion.framework in Frameworks */,
+				CB806DCE19B5926500072C78 /* MediaPlayer.framework in Frameworks */,
+				CB806DC819B5921800072C78 /* CoreLocation.framework in Frameworks */,
+				CB806DC619B5920100072C78 /* AssetsLibrary.framework in Frameworks */,
+				CB806DC419B591F200072C78 /* Twitter.framework in Frameworks */,
+				CB806DC219B591E800072C78 /* Accounts.framework in Frameworks */,
+				CB806DC019B591E000072C78 /* AddressBook.framework in Frameworks */,
 				CB806B3519B5875100072C78 /* OpenAL.framework in Frameworks */,
 				CB806B3B19B5875100072C78 /* UIKit.framework in Frameworks */,
 				CB806B3119B5875100072C78 /* QuartzCore.framework in Frameworks */,
 				CB806B3919B5875100072C78 /* AVFoundation.framework in Frameworks */,
-				CB806B3F19B5875100072C78 /* CoreGraphics.framework in Frameworks */,
-				CB806B4119B5875100072C78 /* CoreText.framework in Frameworks */,
+				CB806DBE19B591A400072C78 /* GooglePlus.framework in Frameworks */,
 				CB806B3319B5875100072C78 /* OpenGLES.framework in Frameworks */,
 				CB806B3D19B5875100072C78 /* Foundation.framework in Frameworks */,
 				CB806B4919B5875100072C78 /* libObjectiveChipmunk.a in Frameworks */,
 				CB806B4319B5875100072C78 /* GLKit.framework in Frameworks */,
+				CB806DBD19B591A400072C78 /* GoogleOpenSource.framework in Frameworks */,
 				CB806B3719B5875100072C78 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,6 +693,19 @@
 		CB806B2F19B5875100072C78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB806DD319B592C100072C78 /* SystemConfiguration.framework */,
+				CB806DD119B592B400072C78 /* Security.framework */,
+				CB806DCF19B5927200072C78 /* CoreMotion.framework */,
+				CB806DCD19B5926500072C78 /* MediaPlayer.framework */,
+				CB806DCB19B5923B00072C78 /* CFNetwork.framework */,
+				CB806DC919B5922400072C78 /* CoreMedia.framework */,
+				CB806DC719B5921800072C78 /* CoreLocation.framework */,
+				CB806DC519B5920100072C78 /* AssetsLibrary.framework */,
+				CB806DC319B591F200072C78 /* Twitter.framework */,
+				CB806DC119B591E800072C78 /* Accounts.framework */,
+				CB806DBF19B591E000072C78 /* AddressBook.framework */,
+				CB806DBB19B591A400072C78 /* GoogleOpenSource.framework */,
+				CB806DBC19B591A400072C78 /* GooglePlus.framework */,
 				CB806B3019B5875100072C78 /* QuartzCore.framework */,
 				CB806B3219B5875100072C78 /* OpenGLES.framework */,
 				CB806B3419B5875100072C78 /* OpenAL.framework */,
@@ -1798,6 +1846,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/codesnooker/MacOSX/Development/Projects/Public-Github/EziSocial-3x-Silver-Bullet/supporting-libs/ios/gplus",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld-Cocos2d-ios/Supporting Files/Prefix.pch";
@@ -1822,6 +1874,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/codesnooker/MacOSX/Development/Projects/Public-Github/EziSocial-3x-Silver-Bullet/supporting-libs/ios/gplus",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld-Cocos2d-ios/Supporting Files/Prefix.pch";
 				HEADER_SEARCH_PATHS = (
