@@ -48,6 +48,10 @@
     
     [EziSocial enableLogs:YES andAlerts:YES];
     [EziSocial initWithProductKey:@"HTjTc9pZ821MPKS1"];
+    
+    [EziSocial setGoogleClientID:@"1065149193676-s2uavae89cksb39fdu3mkm75u90ujknd.apps.googleusercontent.com"];
+    [EziSocial setFacebookID:@"508580802608966"];
+    
 	return YES;
 }
 
