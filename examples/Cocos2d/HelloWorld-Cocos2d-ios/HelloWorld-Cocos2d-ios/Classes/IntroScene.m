@@ -10,6 +10,7 @@
 // Import the interfaces
 #import "IntroScene.h"
 #import "HelloWorldScene.h"
+#import <EziSocialSDK/EziSocial.h>
 
 // -----------------------------------------------------------------------
 #pragma mark - IntroScene
@@ -51,6 +52,15 @@
     helloWorldButton.position = ccp(0.5f, 0.35f);
     [helloWorldButton setTarget:self selector:@selector(onSpinningClicked:)];
     [self addChild:helloWorldButton];
+    
+    // EziSocial Dashboard Button
+    CCButton *dashboardButton = [CCButton buttonWithTitle:@"[ Launch Dashboard ]" fontName:@"Verdana-Bold" fontSize:18.0f];
+    
+    dashboardButton.positionType = CCPositionTypeNormalized;
+    dashboardButton.position = ccp(0.5f, 0.25f);
+    [dashboardButton setTarget:self selector:@selector(launchDashboard:)];
+    [self addChild:dashboardButton];
+    
 
     // done
 	return self;
@@ -65,6 +75,18 @@
     // start spinning scene with transition
     [[CCDirector sharedDirector] replaceScene:[HelloWorldScene scene]
                                withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionLeft duration:1.0f]];
+}
+
+- (void)launchDashboard:(id) sender
+{
+    CCLOG(@"Launching EziSocial Dashboard");
+    
+    [EziSocial showDashboard:^{
+        
+        [EziSocial dismissDashboard];
+        [self onSpinningClicked:sender];
+        
+    }];
 }
 
 // -----------------------------------------------------------------------

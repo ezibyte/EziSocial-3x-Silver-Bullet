@@ -11,6 +11,9 @@
 #import "IntroScene.h"
 #import "HelloWorldScene.h"
 
+#import <EziSocialSDK/EziSocial.h>
+
+
 @implementation AppDelegate
 
 // 
@@ -42,7 +45,9 @@
 		// Make iPad's act like they run at a 2x content scale. (iPad retina 4x)
 //		CCSetupTabletScale2X: @(YES),
 	}];
-	
+    
+    [EziSocial enableLogs:YES andAlerts:YES];
+    [EziSocial initWithProductKey:@"HTjTc9pZ821MPKS1"];
 	return YES;
 }
 
@@ -50,6 +55,14 @@
 {
 	// This method should return the very first scene to be run when your app starts.
 	return [IntroScene scene];
+}
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [EziSocial application:application
+                          openURL:url
+                sourceApplication:sourceApplication
+                       annotation:annotation];
 }
 
 @end

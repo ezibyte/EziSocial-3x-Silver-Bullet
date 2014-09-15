@@ -10,6 +10,8 @@
 #import "HelloWorldScene.h"
 #import "IntroScene.h"
 
+#import <EziSocialSDK/EziSocial.h>
+
 // -----------------------------------------------------------------------
 #pragma mark - HelloWorldScene
 // -----------------------------------------------------------------------
@@ -58,6 +60,20 @@
     backButton.position = ccp(0.85f, 0.95f); // Top Right of screen
     [backButton setTarget:self selector:@selector(onBackClicked:)];
     [self addChild:backButton];
+    
+    // Create a fbshare button
+    CCButton *fbShareButton = [CCButton buttonWithTitle:@"[ FbShare ]" fontName:@"Verdana-Bold" fontSize:18.0f];
+    fbShareButton.positionType = CCPositionTypeNormalized;
+    fbShareButton.position = ccp(0.85f, 0.85f); // Top Right of screen
+    [fbShareButton setTarget:self selector:@selector(onFacebookShareClick:)];
+    [self addChild:fbShareButton];
+    
+    // Create a fbshare button
+    CCButton *tweetButton = [CCButton buttonWithTitle:@"[ Tweet ]" fontName:@"Verdana-Bold" fontSize:18.0f];
+    tweetButton.positionType = CCPositionTypeNormalized;
+    tweetButton.position = ccp(0.85f, 0.75f); // Top Right of screen
+    [tweetButton setTarget:self selector:@selector(onTweetClicked:)];
+    [self addChild:tweetButton];
 
     // done
 	return self;
@@ -117,6 +133,40 @@
     // back to intro scene with transition
     [[CCDirector sharedDirector] replaceScene:[IntroScene scene]
                                withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionRight duration:1.0f]];
+}
+
+- (void) onFacebookShareClick:(id)sender
+{
+    CCLOG(@"Share status on Facebook clicked.");
+ 
+    [EziSocial fbShare:@"Hello World..." onComplete:^(BOOL success) {
+       
+        if (success)
+        {
+            CCLOG(@"Message posted on facebook wall successfully");
+        }
+        else
+        {
+            CCLOG(@"Connot post message on facebook wall.");
+        }
+        
+    }];
+}
+
+- (void) onTweetClicked:(id)sender
+{
+    CCLOG(@"Share status on Twitter clicked.");
+    
+    [EziSocial tweet:@"Hello World...." onComplete:^(BOOL success) {
+        if (success)
+        {
+            CCLOG(@"Tweet successful");
+        }
+        else
+        {
+            CCLOG(@"Cannot tweet message");
+        }
+    }];
 }
 
 // -----------------------------------------------------------------------

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB4B8DED19BBC0130022237F /* EziSocialSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4B8DEC19BBC0130022237F /* EziSocialSDK.framework */; };
+		CB4B8DEF19BBC02A0022237F /* ezisocial.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CB4B8DEE19BBC02A0022237F /* ezisocial.bundle */; };
 		CB806B3119B5875100072C78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806B3019B5875100072C78 /* QuartzCore.framework */; };
 		CB806B3319B5875100072C78 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806B3219B5875100072C78 /* OpenGLES.framework */; };
 		CB806B3519B5875100072C78 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB806B3419B5875100072C78 /* OpenAL.framework */; };
@@ -226,6 +228,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB4B8DEC19BBC0130022237F /* EziSocialSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EziSocialSDK.framework; path = "../../../plugin/ios+cocos2d/EziSocialSDK.framework"; sourceTree = "<group>"; };
+		CB4B8DEE19BBC02A0022237F /* ezisocial.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ezisocial.bundle; path = ../../../../resources/ios/ezisocial.bundle; sourceTree = "<group>"; };
 		CB806B2D19B5875100072C78 /* HelloWorld-Cocos2d-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HelloWorld-Cocos2d-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB806B3019B5875100072C78 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CB806B3219B5875100072C78 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -644,12 +648,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB806DCE19B5926500072C78 /* MediaPlayer.framework in Frameworks */,
 				CB806DD419B592C100072C78 /* SystemConfiguration.framework in Frameworks */,
 				CB806DD219B592B400072C78 /* Security.framework in Frameworks */,
 				CB806B4119B5875100072C78 /* CoreText.framework in Frameworks */,
 				CB806B3F19B5875100072C78 /* CoreGraphics.framework in Frameworks */,
+				CB4B8DED19BBC0130022237F /* EziSocialSDK.framework in Frameworks */,
 				CB806DD019B5927200072C78 /* CoreMotion.framework in Frameworks */,
-				CB806DCE19B5926500072C78 /* MediaPlayer.framework in Frameworks */,
 				CB806DC819B5921800072C78 /* CoreLocation.framework in Frameworks */,
 				CB806DC619B5920100072C78 /* AssetsLibrary.framework in Frameworks */,
 				CB806DC419B591F200072C78 /* Twitter.framework in Frameworks */,
@@ -693,6 +698,9 @@
 		CB806B2F19B5875100072C78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB4B8DEC19BBC0130022237F /* EziSocialSDK.framework */,
+				CB806DBB19B591A400072C78 /* GoogleOpenSource.framework */,
+				CB806DBC19B591A400072C78 /* GooglePlus.framework */,
 				CB806DD319B592C100072C78 /* SystemConfiguration.framework */,
 				CB806DD119B592B400072C78 /* Security.framework */,
 				CB806DCF19B5927200072C78 /* CoreMotion.framework */,
@@ -704,8 +712,6 @@
 				CB806DC319B591F200072C78 /* Twitter.framework */,
 				CB806DC119B591E800072C78 /* Accounts.framework */,
 				CB806DBF19B591E000072C78 /* AddressBook.framework */,
-				CB806DBB19B591A400072C78 /* GoogleOpenSource.framework */,
-				CB806DBC19B591A400072C78 /* GooglePlus.framework */,
 				CB806B3019B5875100072C78 /* QuartzCore.framework */,
 				CB806B3219B5875100072C78 /* OpenGLES.framework */,
 				CB806B3419B5875100072C78 /* OpenAL.framework */,
@@ -734,6 +740,7 @@
 		CB806B4B19B5875100072C78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CB4B8DEE19BBC02A0022237F /* ezisocial.bundle */,
 				CB806B4C19B5875100072C78 /* Default.png */,
 				CB806B4E19B5875100072C78 /* Default@2x.png */,
 				CB806B5019B5875100072C78 /* Default-568h@2x.png */,
@@ -1562,6 +1569,7 @@
 				CB806B6619B5875100072C78 /* Icon-Small-50.png in Resources */,
 				CB806DA419B5875400072C78 /* LICENSE_Chipmunk.txt in Resources */,
 				CB806B5A19B5875100072C78 /* Icon-72.png in Resources */,
+				CB4B8DEF19BBC02A0022237F /* ezisocial.bundle in Resources */,
 				CB806D3619B5875300072C78 /* LICENSE_CCBReader.txt in Resources */,
 				CB806CA619B5875300072C78 /* LICENSE_cocos2d.txt in Resources */,
 				CB806B5119B5875100072C78 /* Default-568h@2x.png in Resources */,
@@ -1849,6 +1857,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/codesnooker/MacOSX/Development/Projects/Public-Github/EziSocial-3x-Silver-Bullet/supporting-libs/ios/gplus",
+					"/Users/codesnooker/MacOSX/Development/Projects/Public-Github/EziSocial-3x-Silver-Bullet/plugin",
+					"/Users/codesnooker/MacOSX/Development/Projects/Public-Github/EziSocial-3x-Silver-Bullet/plugin/ios+cocos2d",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1877,6 +1887,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/codesnooker/MacOSX/Development/Projects/Public-Github/EziSocial-3x-Silver-Bullet/supporting-libs/ios/gplus",
+					"/Users/codesnooker/MacOSX/Development/Projects/Public-Github/EziSocial-3x-Silver-Bullet/plugin",
+					"/Users/codesnooker/MacOSX/Development/Projects/Public-Github/EziSocial-3x-Silver-Bullet/plugin/ios+cocos2d",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld-Cocos2d-ios/Supporting Files/Prefix.pch";
@@ -1915,6 +1927,7 @@
 				CB806DB719B5875400072C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB806DB819B5875400072C78 /* Build configuration list for PBXNativeTarget "HelloWorld-Cocos2d-ios" */ = {
 			isa = XCConfigurationList;
@@ -1923,6 +1936,7 @@
 				CB806DBA19B5875400072C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
